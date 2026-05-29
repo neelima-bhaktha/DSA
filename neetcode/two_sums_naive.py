@@ -4,9 +4,8 @@ def two_sum(nums, target):
         num = nums[i]
         complement = target - num
         if complement in map:
-            return [map[complement], i]
+            return[map[complement], i]
         map[num] = i
-
 assert two_sum([4,5,6,7], 10) == [0,2]
 assert two_sum([4,5,6,7], 12) == [1, 3]
-print("passed all test cases")
+print("all test cases passed")
